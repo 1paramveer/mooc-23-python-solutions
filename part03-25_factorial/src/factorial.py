@@ -1,0 +1,15 @@
+factorial = 1
+i = 1
+
+while True:
+    number = int(input("Please type in a number: "))
+    if number > 0:
+        while i <= number:
+            factorial *= i
+            i += 1
+        print(f"The factorial of the number {number} is {factorial}")
+        factorial = 1
+        i = 1
+    else:
+        print("Thanks and bye!")
+        break
